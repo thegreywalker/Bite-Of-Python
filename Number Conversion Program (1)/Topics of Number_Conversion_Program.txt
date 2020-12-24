@@ -1,0 +1,10 @@
+1) Binary to Decimal
+2) Binary to Octal
+3) Binary to Hexadecimal
+4) Decimal to Binary
+5) Decimal to Octal
+6) Decimal to Hexadecimal
+7) Octal to Decimal
+8) Octal to Binary
+9) Hexadecimal to Decimal
+10)Hexadecimal to Binary
