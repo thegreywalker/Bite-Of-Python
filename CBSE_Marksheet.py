@@ -1,6 +1,6 @@
 # Below will be the ANSI color codes and it is used in coloring the Report Card.
 """
-Make Sure you put a space after "," while entering multiple values at once, e.g -> (Apurba, Himangshu, Anushka) 
+Make Sure you put a space after "," while entering multiple values at once, e.g -> (Apurba, Himangshu,Shrinidhi) 
 """
 
 
