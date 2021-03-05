@@ -4,12 +4,6 @@
 
 
 
-print("Hello World")
-
-
-
-
-
 
 
 
