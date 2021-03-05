@@ -1,5 +1,4 @@
-import mysql.connector
-import csv
+import mysql.connector, csv
 
 db = mysql.connector.connect(
     host = "localhost",
