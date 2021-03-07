@@ -21,7 +21,7 @@ for x in myCursor:
 
 
 """
-Reading and pasing the text data into SQL Database mydb, table -- pythontextdata 
+Reading and passing the text data into SQL Database mydb, table -- pythontextdata 
 """
 
 
