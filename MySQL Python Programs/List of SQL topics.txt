@@ -1,0 +1,10 @@
+1) Create a database -- Write a Code 
+2) Create five tables in that database -- Write a Code
+3) Insert five records in any one table -- Write a Code 
+
+4) Generate list of present databases in sql -- Write a Code 
+5) Generate list of Tables in one database -- Write a Code 
+6) Show all records in a table -- Write a Code
+7) Update mark/percentage of student by 5 -- Write a code 
+8) Create 3 columns extra in the table created above -- Write a Code 
+9) Write 3 variables for the columns and then take input from the User and then pass it as a query to the Database -- Write a Code
