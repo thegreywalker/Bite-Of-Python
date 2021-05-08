@@ -1,2 +1,2 @@
 # Higher-Secondary_CS
-Basic Codes repo, here all the codes related to Higher Secondary Syllabus and little bit more is present. Mostly the Codes will be in Python 3.9.0 and higher and CBSE Class 11-12 Computer Science Syllabus followed
+A Code Repository wherein we have most of all my Python Programs I have Explored and done in my two years of Higher Secondary School. It is kind of informal way of storing programs and not well organised. Generally I keep everything organised but this is an Exception. So if you are interested in seeing and learning something from my Experience then go ahed and Explore my Inital Days of Programming.
