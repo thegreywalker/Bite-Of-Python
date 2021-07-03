@@ -9,7 +9,7 @@ Write following functions:
 6.Left Right Shift(L)
 7.LargestAndSmallest(L)
 8.LargeAndSmall(L, L)
-9.ZeroinPrime(L)#Apurbo the sexy boi!
+9.ZeroinPrime(L)
 """
 
 
