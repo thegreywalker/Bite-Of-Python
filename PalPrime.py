@@ -4,6 +4,9 @@ Bugs are there for inputs like 121, 757 etc.error -> Number is not a palindrome 
 """
 
 
+
+
+
 def palPrime(n):
     flag1 = True
     flag2 = True
