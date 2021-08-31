@@ -35,7 +35,7 @@ db = mysql.connector.connect(host="localhost", user="root", passwd="root", auth_
                              database="myorg")
 
 users = [("Apurba Ghosh", "1345"),
-         ("Himangshu De", "password#$34"),
+         ("Himangshu De", "ScrewYou24"),
          ("Raima Ray", "iloveapurba")
          ]
 
