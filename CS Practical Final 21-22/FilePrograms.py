@@ -1,3 +1,27 @@
+# Q12 Solution
+with open("text.txt") as optFile:
+    lines = optFile.read().split()
+    for items in lines:
+        print(items+"#", end="")
+
+
+# Q13 Solution
+with open("text.txt") as tarFile:
+    lines = tarFile.read()
+    vowel = consonants = uppercase = lowercase = 0
+    for items in lines:
+        if items in "aeiouAEIOU":
+            vowel += 1
+        if items.isupper():
+            uppercase += 1
+        if items.islower():
+            lowercase += 1
+        if items not in "AaEeIiOoUu":
+            consonants += 1
+    print(f"Total Vowels are: {vowel}\nTotal Consonants are: {consonants}\nTotal Uppercase Characters are: {uppercase}\nTotal Lowercase characters are: {lowercase}")
+
+
+
 # Q14 Solution
 import os
 file1 = open("text.txt", "r")
