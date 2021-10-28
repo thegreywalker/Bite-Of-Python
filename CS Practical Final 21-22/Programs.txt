@@ -99,3 +99,11 @@ def searchMarkInRecord():
 
 marksInRecord()
 searchMarkInRecord()
+
+
+
+
+
+Create a dictionary whose keys are month names and whose values are the number of days in the corresponding months.
+ i) Ask the user to enter a month name and use the dictionary to tell how many days are there in the month.
+ii) Print out of all the months with 31 days.

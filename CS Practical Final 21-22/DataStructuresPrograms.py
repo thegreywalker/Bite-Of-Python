@@ -33,12 +33,44 @@ def commonElements(ls: list, ls2: list) -> list:
     return Commonlist
 
 
-def dictDatas(*args) -> dict:
-    dictionary = {}
-    for index, val in enumerate(args):
-        if index%2 == 0:
-            dictionary[str(val)] = args[index+1]
+class Dictionary():
+    def __init__(self) -> None:
+        self.dictionary = {
+        'January': 31,
+        'February': 28,
+        'March': 31,
+        'April': 30,
+        'May': 31,
+        'June': 30,
+        'July': 31,
+        'August': 31,
+        'September': 30,
+        'Octobar': 31,
+        'Novembar': 30,
+        'Decembar': 31
+    }
 
-        else:
-            pass
-    return dictionary
+    def getDays(self, month) -> str:
+        return "The Number of Days in {0} is {1}".format(
+            month, self.dictionary[month]
+        )
+    
+    def getMonths(self) -> list:
+        listOfMonths = []
+        for val in self.dictionary.keys():
+            if self.dictionary[val] == 31:
+                listOfMonths.append( "{0}".format(val))
+        return listOfMonths
+
+
+def getDigits(number : int) -> int:
+    nm = number
+    count = 0
+    for val in range(len(str(number))):
+        number //= 10
+        count += 1
+    return "The Number {0} has {1} digits in it.".format(nm, count)
+
+
+
+    
