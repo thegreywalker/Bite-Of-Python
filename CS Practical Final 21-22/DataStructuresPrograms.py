@@ -80,7 +80,7 @@ class Dictionary():
         return listOfMonths
 
 
-5. Write a program that prints the following series:
+# 5. Write a program that prints the following series:
 # i) -X+X^2+X^3+X^4+X^5+X^6+...+X^n
 
 
