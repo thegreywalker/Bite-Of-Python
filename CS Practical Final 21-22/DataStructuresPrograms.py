@@ -83,7 +83,7 @@ class Dictionary():
 # 5. Write a program that prints the following series:
 # i) -X + X2 – X3 + X4 + …..Xn
 
-x= float (input ("Enter number of terms: ")  
+x= int(input ("Enter number of terms: ")  
 y=int(input ("Enter the constant value: ")) 
 a=0
 for i in range (1, x+1):
