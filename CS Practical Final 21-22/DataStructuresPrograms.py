@@ -1,3 +1,5 @@
+# 1. Write a python code that prints the longest word in a list of words
+
 def longestWord(ls : list) -> str:
     lengthOflargestWord = len(ls[0])
     wordIndex = 0
@@ -11,13 +13,15 @@ def longestWord(ls : list) -> str:
     return ls[wordIndex]
 
 
-
+# 2. Write a python program to create a tuple storing first 9 Fibonacci series.
 def FiboinTuple() -> tuple:
     ls = [0, 1]
     for val in range(1, 8):
         ls.append(ls[-1] + ls[-2])
     return tuple(ls)
 
+
+# 3.Write a program that returns a list contains only common elements from two given lists of 10 elements and 7 elements respectively.
 
 def commonElements(ls: list, ls2: list) -> list:
     Commonlist = []
@@ -31,6 +35,19 @@ def commonElements(ls: list, ls2: list) -> list:
         else:
             continue
     return Commonlist
+
+#or
+
+
+def common_elements(list1, list2):
+    return [x for x in list1 if x in list2]
+
+
+common_elements([1, 2, 3, 4], [2, 3, 4, 5])
+
+# 4. Create a dictionary whose keys are month names and whose values are the number of days in the corresponding months.
+# i) Ask the user to enter a month name and use the dictionary to tell how many days are there in the month.
+# ii) Print out of all the months with 31 days.
 
 
 class Dictionary():
@@ -63,6 +80,27 @@ class Dictionary():
         return listOfMonths
 
 
+5. Write a program that prints the following series:
+# i) -X+X^2+X^3+X^4+X^5+X^6+...+X^n
+
+
+def series(n):
+    return [x ** n for x in range(1, n + 1)]
+
+
+print(series(5))
+
+# ii) 1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3...+n)
+
+
+def series_sum(n):
+    return sum(1 + x for x in range(n))
+
+
+print(series_sum(5))
+
+
+# 6. Write a program that accept any number and prints number of digits.
 def getDigits(number : int) -> int:
     nm = number
     count = 0
@@ -72,5 +110,56 @@ def getDigits(number : int) -> int:
     return "The Number {0} has {1} digits in it.".format(nm, count)
 
 
+# 7.Write a function to insert a string into the middle of another string.
+def insert_string(str1, str2):
+    return str1[:2] + str2 + str1[2:]
+
+
+print(insert_string("abc", "xyz"))
+
+
+# 8. Write a python program to read a name and display it in abbreviated form.
+# Name: Raju Verma
+# Output: RV
+
+def abbvName():
+    name = input("Enter your name: ")
+    name = name.split()
+    print("Abbreviated form of your name is: ", name[0][0]+name[-1][0])
+
+abbvName()
+
+
+# 9. Write a function to calculate GCD of two given numbers.
+
+
+def gcd(a, b):
+    if b == 0:
+        return a
+    else:
+        return gcd(b, a % b)
+
+
+# 10. Write a function that prints the maximum and minimum values in a dictionary. The dictionary is given as an argument to the function.
+def minMax(dic):
+    print("Maximum value: ", max(dic.values()))
+    print("Minimum value: ", min(dic.values()))
+
+minMax({'a':1, 'b':2, 'c':3, 'd':4, 'e':5})   
+
+#   11. Write a program that prompts a number from the user and adds it in a list. If the number is more than 100 then add 'EXCESS' in the list.
+def addNum():
+    numList = []
+    while True:
+        num=int(input("Enter a number: "))
+        if num<100:
+            numList.append(num)
+            print(numList)
+        else:
+            numList.append("EXCESS")
+            break
+    print(numList)
+
+addNum()
 
     
