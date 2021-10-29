@@ -81,14 +81,19 @@ class Dictionary():
 
 
 # 5. Write a program that prints the following series:
-# i) -X+X^2+X^3+X^4+X^5+X^6+...+X^n
+# i) -X + X2 – X3 + X4 + …..Xn
+
+x= float (input ("Enter number of terms: ")  
+y=int(input ("Enter the constant value: ")) 
+a=0
+for i in range (1, x+1):
+      If i%2= = 0:
+          a +=(y **i) 
+      else:
+          a-=(y**i) 
+print (The result of the series is:" ,a)
 
 
-def series(n):
-    return [x ** n for x in range(1, n + 1)]
-
-
-print(series(5))
 
 # ii) 1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3...+n)
 
