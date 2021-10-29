@@ -123,3 +123,79 @@ def searchMarkInRecord():
 
 marksInRecord()
 searchMarkInRecord()
+
+# Q17 Solution
+import random
+
+while True:
+    userEnter = input("Press Enter for  random number or E to exit: ")
+    if userEnter == "e".casefold(): break
+    randomNumber = random.randint(1,6)
+    print(randomNumber)
+
+
+
+#Q18 Solution
+import csv
+def csvUserIn():
+    records = []
+    while True:
+        userID = input("Enter user ID: ")
+        password = input("Enter password: ")
+        userChoice = input("Add another Record?(y/N) ")
+        records.append([userID, password])
+        if userChoice == "y".casefold():
+            continue
+        else: break
+    with open("credentials.csv", "a") as csvFile:
+        writerCsv = csv.writer(csvFile)
+        writerCsv.writerow(["UserID", "Password"])
+        writerCsv.writerows(records)
+    
+def csvSearchIn():
+    with open("credentials.csv", "r") as csvFile:
+        mainReader = csv.reader(csvFile)
+        header = next(mainReader)
+        rows = []
+        for row in mainReader:
+            if row != []:
+                rows.append(row)
+    
+    while True:
+        userIDInput = input("Enter userID to search: ")
+        for items in rows:
+            if userIDInput == items[0]:
+                print(f"The password for '{userIDInput}' is '{items[1]}'")
+                break
+            else: pass
+        else:
+            print("No records found! :(")
+        userChoice = input("Search another?(y/N)")
+        if userChoice == "y".casefold(): continue
+        else: break
+
+# csvUserIn()
+csvSearchIn()
+        
+
+# 19. Write a python program to read a text file STORY.TXT and print only palindrome words from the file.
+
+def palindromePrinter():
+    f = open("story.txt", "r")
+    f = f.read().split()
+    for i in f:
+        if i == i[::-1]:
+            print(i)
+
+palindromePrinter()
+
+
+
+# Q20 Solution
+with open("text.txt") as txtFile:
+    linesList = txtFile.readlines()
+    for i in linesList[::-1]:
+        print(i.strip("\n"))
+
+
+
